@@ -8,6 +8,7 @@ import ShoppingList from './pages/ShoppingList';
 import Notes from './pages/Notes';
 import Navbar from './components/Navbar';
 import './styles/globals.css';
+import TodoApp from "./pages/TodoApp";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/shopping" element={<ShoppingList />} />
         <Route path="/notes" element={<Notes />} />
+          <Route path="/todolist" element={<TodoApp items={[{ id: 1, name: "Task 1" }]} />} />
       </Routes>
     </Router>
   );
